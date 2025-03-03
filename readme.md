@@ -124,3 +124,4 @@ MIT
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+<a  href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fsribalan98%2FfivemReact-modual"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fsribalan98%2FfivemReact-modual&labelColor=%2337d67a&countColor=%23d9e3f0&style=plastic&labelStyle=lower" /></a>
