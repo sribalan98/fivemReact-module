@@ -12,10 +12,8 @@ A modular and type-safe React library for FiveM NUI development.
 
 ## Installation
 
-```bash
-npm install fivemReact-modual
-# or
-yarn add fivemReact-modual
+```git
+git clone https://github.com/sribalan98/fivemReact-modual
 ```
 
 ## Quick Start
