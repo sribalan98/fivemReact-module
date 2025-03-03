@@ -14,7 +14,7 @@ A modular and type-safe React library for FiveM NUI development.
 
 ## Installation
 
-```git
+```bash
 git clone https://github.com/sribalan98/fivemReact-modual
 ```
 
@@ -62,12 +62,16 @@ const App: React.FC<AppProps> = ({ title }) => {
     <VisibilityProvider
       wrapperComponent={CustomWrapper}
       visibilityStyle={{ opacity: visible ? 1 : 0 }}
+      visibilityClassName="custom-visibility"
       closeKeys={["Escape"]}
+      defaultVisible={false}
       onVisibilityChange={(isVisible) => console.log("Visibility:", isVisible)}
       onClose={() => console.log("UI Closed")}
       onShow={() => console.log("UI Shown")}
       handleKeyboard={true}
+      handleNuiEvents={true}
       className="app-container"
+      style={{ padding: "20px" }}
     >
       <div>
         <h1>{title}</h1>
@@ -112,12 +116,16 @@ function App({ title }) {
     <VisibilityProvider
       wrapperComponent={CustomWrapper}
       visibilityStyle={{ opacity: visible ? 1 : 0 }}
+      visibilityClassName="custom-visibility"
       closeKeys={["Escape"]}
+      defaultVisible={false}
       onVisibilityChange={(isVisible) => console.log("Visibility:", isVisible)}
       onClose={() => console.log("UI Closed")}
       onShow={() => console.log("UI Shown")}
       handleKeyboard={true}
+      handleNuiEvents={true}
       className="app-container"
+      style={{ padding: "20px" }}
     >
       <div>
         <h1>{title}</h1>
@@ -293,8 +301,6 @@ function App() {
 
 export default App;
 ```
-
-This example demonstrates how to create a simple application using the `VisibilityProvider` to manage visibility state with a custom wrapper component.
 
 ## License
 
