@@ -1,12 +1,10 @@
-
-
+import {  Routes, Route } from "react-router-dom";
 function App() {
-
-
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+      <Routes>
+        <Route path="/" element={<h1>Hello World</h1>} />
+        <Route path="/contextmenu" element={<h1>Context Menu</h1>} />
+      </Routes>
   )
 }
 
