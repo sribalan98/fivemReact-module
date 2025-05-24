@@ -9,4 +9,11 @@ export default defineConfig({
     host: "0.0.0.0",
     port: 5173,
   },
+  optimizeDeps: {
+    exclude: ['@tabler/icons-react'],
+    include: ['@mantine/core', '@mantine/hooks', '@mantine/notifications']
+  },
+  build: {
+    chunkSizeWarningLimit: 1600,
+  }
 })

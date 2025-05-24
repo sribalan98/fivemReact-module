@@ -1,10 +1,15 @@
 import {  Routes, Route } from "react-router-dom";
+import { MantineProvider } from '@mantine/core';
+
+import Main from "./components/Main";
+
 function App() {
   return (
+    <MantineProvider>
       <Routes>
-        <Route path="/" element={<h1>Hello World</h1>} />
-        <Route path="/contextmenu" element={<h1>Context Menu</h1>} />
+        <Route path="/" element={<Main />} />
       </Routes>
+    </MantineProvider>
   )
 }
 

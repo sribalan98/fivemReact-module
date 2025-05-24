@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { VisibilityProvider } from './FivemHooks/VisibilityProvider'
 import { BrowserRouter as Router } from "react-router-dom";
 import App from './App.tsx'
+import '@mantine/core/styles.css';
+import '@mantine/notifications/styles.css';
 
 
 const rootElement = document.getElementById("root");
